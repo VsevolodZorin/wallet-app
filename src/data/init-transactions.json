@@ -1,0 +1,37 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "type": "PAYMENT",
+      "sum": 10,
+      "name": "transaction 1",
+      "description": "... description ...",
+      "date": "Tue Mar 07 2023 00:36:24 GMT+0200",
+      "pending": false,
+      "authorizedUser": "",
+      "img": ""
+    },
+    {
+      "id": 2,
+      "type": "PAYMENT",
+      "sum": 10,
+      "name": "transaction 2",
+      "description": "... description ...",
+      "date": "Tue Mar 07 2023 01:36:24 GMT+0200",
+      "pending": false,
+      "authorizedUser": "",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "type": "CREDIT",
+      "sum": 10,
+      "name": "transaction 3",
+      "description": "... description ...",
+      "date": "Tue Mar 07 2023 01:36:24 GMT+0200",
+      "pending": false,
+      "authorizedUser": "",
+      "img": ""
+    }
+  ]
+}
