@@ -1,14 +1,14 @@
-import { useEffect, FC } from 'react';
+import { FC, useEffect } from 'react';
+import mockData from 'src/data/init-transactions.json';
 import { useAppDispatch } from 'src/hooks/redux';
 import { CustomRouter } from 'src/routes';
+import { appActions, ICard } from 'src/store/reducers/app.slice';
 import Header from '../Header';
-import { appActions, ITransaction } from 'src/store/reducers/app.slice';
-import mockData from 'src/data/init-transactions.json';
 
 const Layout: FC = () => {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(appActions.setTransactions(mockData.transactions as ITransaction[]));
+    dispatch(appActions.setCard(mockData.card as ICard));
   }, []);
 
   return (

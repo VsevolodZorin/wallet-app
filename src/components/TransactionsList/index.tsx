@@ -7,13 +7,16 @@ const TransactionsList: FC = () => {
   const transactions = useAppSelector(selectTransactions);
 
   const renderList = useCallback(() => {
-    return transactions.map(el => (
-      <li key={el.id}>
-        <Link to={`/${el.id}`}>
-          <span>{el.name}</span>
-        </Link>
-      </li>
-    ));
+    if (transactions) {
+      return transactions.map(el => (
+        <li key={el.id}>
+          <Link to={`/${el.id}`}>
+            <span>{el.name}</span>
+          </Link>
+        </li>
+      ));
+    }
+    return null;
   }, [transactions]);
 
   return (

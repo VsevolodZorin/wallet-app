@@ -5,6 +5,12 @@ enum TransactionTypeEnum {
   CREDIT = 'CREDIT',
 }
 
+export interface ICard {
+  limit: number;
+  balance: number;
+  transactions: ITransaction[];
+}
+
 export interface ITransaction {
   id: number;
   type: TransactionTypeEnum;
@@ -18,27 +24,25 @@ export interface ITransaction {
 }
 
 export interface IAppState {
-  transactions: ITransaction[];
+  card: ICard | null;
   selectedTransaction: ITransaction | null;
 }
 
 const initialState: IAppState = {
   selectedTransaction: null,
-  transactions: [],
+  card: null,
 };
 
 export const AppSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    setTransactions: (state, action: PayloadAction<ITransaction[]>) => {
-      state.transactions = action.payload;
+    setCard: (state, action: PayloadAction<ICard>) => {
+      state.card = action.payload;
     },
   },
   extraReducers: {},
 });
-
-export const { setTransactions } = AppSlice.actions;
 
 export const appActions = AppSlice.actions;
 export const appReducer = AppSlice.reducer;
