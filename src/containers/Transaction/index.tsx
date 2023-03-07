@@ -12,8 +12,8 @@ const Transaction: FC = () => {
     if (transaction) {
       return (
         <div>
-          {transaction.id}
-          {transaction.date}
+          <p>{transaction.id}</p>
+          <p>{transaction.date}</p>
         </div>
       );
     }
