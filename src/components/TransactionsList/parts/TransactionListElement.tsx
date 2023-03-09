@@ -1,3 +1,5 @@
+import { faChevronRight as rightArrowIcon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
 import { ITransaction } from 'src/store/reducers/app.slice';
 import getDayOfWeekOrDate from 'src/utils/get-day-of-week-or-date';
@@ -32,7 +34,7 @@ const TransactionListElement: FC<ITransactionListElementProps> = ({ transaction 
           </div>
         </div>
         <div className="tr-list-element__arrow">
-          <div>{'>'}</div>
+          <FontAwesomeIcon icon={rightArrowIcon} />
         </div>
       </div>
       <div className="tr-list-element__bottom">
