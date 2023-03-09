@@ -15,8 +15,22 @@ const TransactionListElement: FC<ITransactionListElementProps> = ({ transaction 
         <div className="tr-list-element__image">
           <div className="tr-list-element__image--img"></div>
         </div>
-        <div className="tr-list-element__info"></div>
-        <div className="tr-list-element__arrow">{'>'}</div>
+        <div className="tr-list-element__info">
+          <div className="tr-list-element__info--top-line">
+            <span>Payment</span>
+            <span>$14.06</span>
+          </div>
+          <div className="tr-list-element__info--middle-line">
+            <span>Payment</span>
+            <span>3%</span>
+          </div>
+          <div className="tr-list-element__info--bottom-line">
+            <span>date</span>
+          </div>
+        </div>
+        <div className="tr-list-element__arrow">
+          <div>{'>'}</div>
+        </div>
       </div>
       <div className="tr-list-element__bottom">
         <div className="tr-list-element__bottom--line"></div>

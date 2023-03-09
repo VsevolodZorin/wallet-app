@@ -26,8 +26,28 @@
     }
   }
   &__info {
+    &--top-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--color-black);
+      font-weight: bold;
+    }
+    &--middle-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--bottom-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
   &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
   &__bottom {
     width: 100%;
