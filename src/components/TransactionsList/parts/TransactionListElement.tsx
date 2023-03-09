@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { ITransaction } from 'src/store/reducers/app.slice';
+import getDayOfWeekOrDate from 'src/utils/get-day-of-week-or-date';
 import './transaction-list-element.scss';
 
 interface ITransactionListElementProps {
@@ -21,11 +22,13 @@ const TransactionListElement: FC<ITransactionListElementProps> = ({ transaction 
             <span>$14.06</span>
           </div>
           <div className="tr-list-element__info--middle-line">
-            <span>Payment</span>
-            <span>3%</span>
+            <span className="tr-list-element__info--middle-line-from">
+              {transaction.authorizedUser}
+            </span>
+            <span className="tr-list-element__info--middle-line-percent">3%</span>
           </div>
           <div className="tr-list-element__info--bottom-line">
-            <span>date</span>
+            <span>{getDayOfWeekOrDate(new Date(transaction.date))}</span>
           </div>
         </div>
         <div className="tr-list-element__arrow">
