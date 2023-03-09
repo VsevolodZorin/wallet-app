@@ -20,7 +20,7 @@ const TransactionsList: FC = () => {
   }, [transactions]);
 
   return (
-    <div>
+    <div className="ui-block">
       <ul>{renderList()}</ul>
     </div>
   );

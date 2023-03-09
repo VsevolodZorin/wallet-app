@@ -1,11 +1,12 @@
 import TransactionsList from '../TransactionsList';
+import './latest-transactions.scss';
 
 const LatestTransactions = () => {
   return (
-    <div>
-      LatestTransactions
+    <section className="latest-transactions">
+      <span>LatestTransactions</span>
       <TransactionsList />
-    </div>
+    </section>
   );
 };
 

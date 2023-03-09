@@ -1,18 +1,13 @@
 import { FC } from 'react';
-import CardBalance from 'src/components/CardBalance';
-import DailyPoints from 'src/components/DailyPoints';
+import CardInfo from 'src/components/CardInfo';
 import LatestTransactions from 'src/components/LatestTransactions';
-import NoPaymentDue from 'src/components/NoPaymentDue';
-import TransactionsList from 'src/components/TransactionsList';
+import './home.scss';
 
 const Home: FC = () => {
   return (
-    <div>
-      <CardBalance />
-      <NoPaymentDue />
-      <DailyPoints />
+    <div className="home">
+      <CardInfo />
       <LatestTransactions />
-      <h1>home</h1>
     </div>
   );
 };
