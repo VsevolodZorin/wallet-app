@@ -1,6 +1,6 @@
-import CardBalance from '../CardBalance';
-import DailyPoints from '../DailyPoints';
-import NoPaymentDue from '../NoPaymentDue';
+import CardBalance from './parts/CardBalance';
+import DailyPoints from './parts/DailyPoints';
+import NoPaymentDue from './parts/NoPaymentDue';
 import './card-info.scss';
 
 const CardInfo = () => {

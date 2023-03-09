@@ -3,8 +3,8 @@ import './daily-points.scss';
 const DailyPoints = () => {
   return (
     <div className="daily-points ui-block">
-      <span>Daily Points</span>
-      <span>$1,482.70 Available</span>
+      <span className="ui-block--title">Daily Points</span>
+      <span>456k</span>
     </div>
   );
 };

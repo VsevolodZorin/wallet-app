@@ -4,7 +4,7 @@ import './latest-transactions.scss';
 const LatestTransactions = () => {
   return (
     <section className="latest-transactions">
-      <span>LatestTransactions</span>
+      <span className="latest-transactions--title">Latest Transactions</span>
       <TransactionsList />
     </section>
   );

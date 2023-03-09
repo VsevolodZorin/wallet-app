@@ -1,7 +1,8 @@
 import { FC, useCallback } from 'react';
-import { Link } from 'react-router-dom';
 import { useAppSelector } from 'src/hooks/redux';
 import { selectTransactions } from 'src/store/selectors';
+import TransactionListElement from './parts/TransactionListElement';
+import './transactions-list.scss';
 
 const TransactionsList: FC = () => {
   const transactions = useAppSelector(selectTransactions);
@@ -10,9 +11,7 @@ const TransactionsList: FC = () => {
     if (transactions) {
       return transactions.map(el => (
         <li key={el.id}>
-          <Link to={`/${el.id}`}>
-            <span>{el.name}</span>
-          </Link>
+          <TransactionListElement transaction={el} />
         </li>
       ));
     }
@@ -20,7 +19,7 @@ const TransactionsList: FC = () => {
   }, [transactions]);
 
   return (
-    <div className="ui-block">
+    <div className="transactions-list">
       <ul>{renderList()}</ul>
     </div>
   );
