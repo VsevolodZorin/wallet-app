@@ -1,0 +1,85 @@
+.tr-list-element {
+  height: var(--height-list-element);
+  font-size: var(--font-size);
+  border-radius: var(--padding-ui-offset);
+  box-sizing: border-box;
+  background-color: var(--color-white);
+  cursor: pointer;
+
+  &__content {
+    display: grid;
+    grid-template-columns: var(--height-list-element) auto calc(var(--padding-ui-offset) * 3);
+    padding: var(--padding-ui-offset);
+    height: 100%;
+    box-sizing: border-box;
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-right: var(--padding-ui-offset);
+    &--img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80%;
+      background-color: black;
+      box-sizing: border-box;
+    }
+  }
+  &__info {
+    &--top-line {
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--color-black);
+      font-weight: bold;
+    }
+    &--middle-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-from {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* after 1 line show ... */
+        -webkit-box-orient: vertical;
+      }
+      &-percent {
+        font-size: 0.9rem;
+        color: var(--color-grey-accent-1);
+        background-color: var(--color-grey-background);
+        padding-left: calc(var(--padding-ui-offset) / 2);
+        padding-right: calc(var(--padding-ui-offset) / 2);
+      }
+    }
+    &--bottom-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  &__bottom {
+    width: 100%;
+    height: 1px;
+    box-sizing: border-box;
+    &--line {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      transform: translateX(calc(var(--padding-ui-offset) + 9px));
+      background-color: var(--color-grey-accent-1);
+      opacity: 0.3;
+    }
+  }
+}

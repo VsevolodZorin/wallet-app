@@ -4,4 +4,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  &--credit {
+    color: var(--color-black);
+    font-weight: bold;
+    font-size: 30px;
+  }
+  &--balance {
+  }
 }

@@ -1,6 +1,6 @@
 {
   "card": {
-    "balance": 1500,
+    "balance": 1000,
     "limit": 1500,
     "transactions": [
       {
@@ -9,9 +9,9 @@
         "sum": 10,
         "name": "transaction 1",
         "description": "... description ...",
-        "date": "Tue Mar 07 2023 00:36:24 GMT+0200",
+        "date": "Tue Mar 07 2022 00:36:24 GMT+0200",
         "pending": false,
-        "authorizedUser": "",
+        "authorizedUser": "asdfasfasdfadfadsfasdf dsf asd asd fs a fads fdas fdsfasdf",
         "img": ""
       },
       {

@@ -1,0 +1,23 @@
+.no-payment-due {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__text {
+    display: flex;
+    flex-direction: column;
+  }
+  &__status {
+    display: flex;
+    justify-content: flex-end;
+    &--icon {
+      width: 75px;
+      height: 75px;
+      color: var(--color-grey-background);
+      border-radius: 50%;
+      background-color: black;
+      border: none;
+    }
+  }
+}
