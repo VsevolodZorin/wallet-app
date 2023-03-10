@@ -1,6 +1,6 @@
 import { getDate } from './get-date';
 
-const getDayOfWeekOrDate = (date: Date): string => {
+export const getDayOfWeekOrDate = (date: Date): string => {
   const today = new Date(); // current date
   const oneDay = 24 * 60 * 60 * 1000; // number of milliseconds in one day
   const diffDays = Math.round(Math.abs((today.getTime() - date.getTime()) / oneDay)); // difference between today's date and the passed date in days
@@ -21,5 +21,3 @@ const getDayOfWeekOrDate = (date: Date): string => {
     // if the date does not correspond to the current week
   }
 };
-
-export default getDayOfWeekOrDate;

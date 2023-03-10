@@ -2,7 +2,7 @@ import { faChevronRight as rightArrowIcon } from '@fortawesome/free-solid-svg-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC } from 'react';
 import { ITransaction } from 'src/store/reducers/app.slice';
-import getDayOfWeekOrDate from 'src/utils/get-day-of-week-or-date';
+import { getDayOfWeekOrDate } from 'src/utils/get-day-of-week-or-date';
 import './transaction-list-element.scss';
 
 interface ITransactionListElementProps {
