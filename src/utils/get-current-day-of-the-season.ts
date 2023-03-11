@@ -47,7 +47,5 @@ export const getCurrentDayOfTheSeason = (date: Date): number => {
       break;
     default:
   }
-  console.log('--- result', result);
-
   return result;
 };
