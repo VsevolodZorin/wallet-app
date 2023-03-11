@@ -38,7 +38,7 @@ const Transaction: FC = () => {
               <span className="transaction__text--title">
                 Status: {transaction.pending ? 'Pending' : 'Approved'}
               </span>
-              <span>RBC Bank Debit Card</span>
+              <span>{transaction.description}</span>
             </div>
             <hr className="transaction__bottom-part--line" />
             <div className="transaction__bottom-part--total">
