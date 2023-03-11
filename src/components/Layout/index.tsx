@@ -6,11 +6,6 @@ import { appActions, ICard } from 'src/store/reducers/app.slice';
 import './layout.scss';
 
 const Layout: FC = () => {
-  const dispatch = useAppDispatch();
-  useEffect(() => {
-    dispatch(appActions.setCard(mockData.card as ICard));
-  }, []);
-
   return (
     <div className="content layout">
       <CustomRouter />
