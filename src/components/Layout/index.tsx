@@ -12,7 +12,7 @@ const Layout: FC = () => {
   }, []);
 
   return (
-    <div className="content">
+    <div className="content layout">
       <CustomRouter />
     </div>
   );

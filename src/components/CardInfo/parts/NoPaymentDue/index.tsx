@@ -1,6 +1,6 @@
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { getCurrentMonth } from 'src/utils/get-cuttent-month';
+import { getCurrentMonth } from 'src/utils/get-current-month';
 import './no-payment-due.scss';
 
 const NoPaymentDue = () => {
