@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-enum TransactionTypeEnum {
+export enum TransactionTypeEnum {
   PAYMENT = 'PAYMENT',
   CREDIT = 'CREDIT',
 }
@@ -19,7 +19,7 @@ export interface ITransaction {
   description: string;
   date: string;
   pending: boolean;
-  authorizedUser: string; // user
+  authorizedUser: string | null; // user
   img: string; // dark-color
 }
 
