@@ -11,6 +11,8 @@ const DailyPoints = () => {
   const transactions = useAppSelector(selectTransactions);
 
   const res = useMemo(() => {
+    console.log(calculatePoints(20));
+
     let result: number = 0;
     if (transactions) {
       const sortedTransactions = transactions?.filter(
