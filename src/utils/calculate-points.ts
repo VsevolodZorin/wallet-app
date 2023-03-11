@@ -24,7 +24,7 @@ export const calculatePoints = (dayNumberInSeason: number) => {
       prevPrevDay = arr[i - 3];
       arr[i - 1] = customSum(prevDay, prevPrevDay);
       i++;
-    } while (i < dayNumberInSeason);
+    } while (i <= dayNumberInSeason);
   }
 
   arr.forEach(el => (result += el));
