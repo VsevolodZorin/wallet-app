@@ -30,7 +30,7 @@ export const getCurrentDayOfTheSeason = (date: Date): number => {
     case 2:
     case 3:
     case 4:
-      result = dayOfYear - countDaysInMonth[0] - countDaysInMonth[1] + 1;
+      result = dayOfYear - getCountDays(countDaysInMonth, 1) + 1;
       break;
     case 5:
     case 6:
