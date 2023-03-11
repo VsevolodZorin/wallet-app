@@ -11,8 +11,6 @@ const DailyPoints = () => {
   const transactions = useAppSelector(selectTransactions);
 
   const res = useMemo(() => {
-    console.log(calculatePoints(20));
-
     let result: number = 0;
     if (transactions) {
       const sortedTransactions = transactions?.filter(
@@ -22,7 +20,6 @@ const DailyPoints = () => {
       if (listDates) {
         listDates.forEach(el => {
           const currentDay = getCurrentDayOfTheSeason(new Date(el));
-          // todo: check 04
           result += calculatePoints(currentDay);
         });
       }
